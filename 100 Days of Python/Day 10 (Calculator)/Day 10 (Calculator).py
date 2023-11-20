@@ -18,13 +18,13 @@ operations = {'+':add, '-':subtract, '*':multiply, '/':divide}
 
 
 def calculator_function():
-    num1 = int(input("What's the number?: "))
+    num1 = float(input("What's the number?: "))
     for symbols in operations:
         print(symbols)
     keep_going = True
     while keep_going:    
         operation_symbol = input("Pick an operation from the line above: ")
-        num2 = int(input("What's the next number?: "))
+        num2 = float(input("What's the next number?: "))
         calculation = operations[operation_symbol]
         answer = calculation(num1, num2)
         print(f'{num1} {operation_symbol} {num2} = {answer}')
