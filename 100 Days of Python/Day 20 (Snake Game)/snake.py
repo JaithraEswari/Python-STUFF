@@ -7,6 +7,7 @@ DOWN = 270
 LEFT = 180
 RIGHT = 0
 
+
 class Snake():
     def __init__(self):
         self.snake_body = []
@@ -33,7 +34,7 @@ class Snake():
             y_coor = self.snake_body[body - 1].ycor()
             self.snake_body[body].goto(x_coor, y_coor)
         self.snake_body[0].forward(MOVE_DISTANCE)
-    
+
     def up(self):
         if self.head.heading() != DOWN:
             self.head.setheading(UP)
