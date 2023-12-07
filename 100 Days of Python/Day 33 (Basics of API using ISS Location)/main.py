@@ -1,6 +1,5 @@
 import datetime as datetime
 import requests
-import numpy as np
 import smtplib
 import time
 
