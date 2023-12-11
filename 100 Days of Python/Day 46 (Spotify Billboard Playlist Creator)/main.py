@@ -30,8 +30,8 @@ for song in all_songs:
 
 # print(new_list)
 
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='c1296e8cc73d4a4b8cb64eb1309132cc11',
-                                               client_secret='fe967e40e9704749a12152212088b73511',
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='xxxxx',
+                                               client_secret='xxxxx',
                                                redirect_uri='https://example.com',
                                                scope='playlist-modify-private',
                                                show_dialog=True,
