@@ -62,23 +62,21 @@ class InstaFollower():
     def follow(self):
         self.driver.get('https://www.instagram.com/chefsteps/followers')
         time.sleep(10)
-
-        i = 1
-        while i < 5:
-            # cancel = self.driver.find_element(By.XPATH, '//button[contains(text(), "Cancel")]')
-            # if cancel:
-            #     self.action.click(cancel)
-            #     self.action.perform()
-            #     time.sleep(5)
+        try:
             follow = self.driver.find_elements(By.XPATH, '//div[contains(text(), "Follow")]')
-            self.action.click(follow[i])
-            self.action.perform()
-            time.sleep(2)
-            i += 1
-
+            for num in follow:
+                self.action.click(num)
+                self.action.perform()
+                time.sleep(2)
+            
+        except ElementClickInterceptedException:
+                cancel = self.driver.find_element(By.XPATH, '//button[contains(text(), "Cancel")]')
+                self.action.click(cancel)
+                self.action.perform()
+                time.sleep(5)
 
 
 instagram = InstaFollower()
 instagram.login()
-# instagram.find_followers()
+instagram.find_followers()
 instagram.follow()
