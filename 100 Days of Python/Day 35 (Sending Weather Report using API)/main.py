@@ -15,7 +15,7 @@ response.raise_for_status()
 weather_data = response.json()
 
 my_email = 'ejljaithra2002@gmail.com'
-my_password = 'ddwz nsmp kjid amqi'
+my_password = 'xxxxxxxxxxx'
 
 idlist = []
 

@@ -7,7 +7,7 @@ STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
 my_email = 'ejljaithra2002@gmail.com'
-my_password = 'ddwz nsmp kjid amqi'
+my_password = 'xxxxxxxxxxxxxxx'
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"

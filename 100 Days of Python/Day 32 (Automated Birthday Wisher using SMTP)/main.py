@@ -6,7 +6,7 @@ now = dt.datetime.now()
 day = now.weekday()
 
 my_email = 'ejljaithra2002@gmail.com'
-my_password = 'ddwz nsmp kjid amqi'
+my_password = 'xxxxxxxxxxxxxxxx'
 
 
 if day == 0:
